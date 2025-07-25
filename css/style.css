@@ -1,1 +1,316 @@
-/* ................ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main,
+header {
+    max-width: 1140px;
+    margin: auto;
+}
+
+/* ..........all fonts ...........*/
+
+.inter-normal {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.noto-serif-normal {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.agbalumo-regular {
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ..............nav......... */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+nav li a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.gray-color {
+    color: #8987A1;
+}
+
+.cart-gap {
+    margin-right: 10px;
+    color: #000000;
+}
+
+.home {
+    color: #252432;
+    font-weight: 600;
+}
+
+.orange-color {
+    color: #E95A08;
+}
+
+/* .............banner......... */
+
+
+.banner-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 120px;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.banner-title {
+    font-size: 4.0625rem;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+
+.banner-description {
+    height: 108px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.375rem;
+    font-weight: 400;
+
+
+    margin-top: 13px;
+    max-width: 530px;
+}
+
+.banner-img {
+    height: 355px;
+}
+
+/* .............. our plant............ */
+
+.our-plant-header {
+    text-align: center;
+}
+
+.our-plant-title {
+    font-size: 3.125rem;
+    font-weight: bold;
+    margin-top: 120px;
+    margin-bottom: 16px;
+}
+
+.our-plant-description {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.375rem;
+    height: 54px;
+    display: inline-block;
+    margin-bottom: 49px;
+}
+
+/* ..............card.............. */
+
+.btn-primary {
+    color: white;
+    background-color: #E95A08;
+    width: 270px;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    padding: 19px 80px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 30px;
+    column-gap: 20px;
+    width: 270px;
+}
+
+.card-info {
+    text-align: center;
+}
+
+.card-img {
+    height: 322px;
+    margin-bottom: 30px;
+}
+
+.card-title {
+    margin-bottom: 20px;
+    font-size: 1.375rem;
+    font-weight: 500;
+}
+
+.card-subtitle {
+    margin-bottom: 30px;
+    font-size: 1.375rem;
+    font-weight: bold;
+}
+
+/* ................flower & plant............. */
+.flower {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 210px;
+    align-items: center;
+}
+
+.flower-img {
+    width: 540px;
+    height: 597px;
+}
+
+.trusted-badge {
+    width: 286px;
+    height: 286px;
+    margin-left: -190px;
+    margin-top: -560px;
+    border-radius: 50%;
+    filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.30));
+
+}
+
+.flower-info {
+    height: 521px;
+}
+
+.flower-title {
+    padding-top: 38px;
+    color: #000000;
+    font-size: 3.125rem;
+    font-weight: bold;
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.flower-description {
+    height: 108px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.375rem;
+    font-weight: 400;
+}
+
+.flower-info li {
+    margin-bottom: 20px;
+    width: 540px;
+    text-align: left
+}
+
+/* ...........Latest deal.......... */
+
+.latest-deal-info {
+    text-align: center;
+}
+
+.latest-deal-title {
+    font-weight: bold;
+    font-size: 3.125rem;
+    margin-top: 133px;
+    margin-bottom: 16px;
+}
+
+.latest-deal-subtitle {
+    font-weight: 400;
+    font-size: 1.375rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 120px;
+}
+
+
+.deals-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 28px;
+    row-gap: 25px;
+}
+
+#box-2 {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+#box1,
+#box3 {
+    width: 366px;
+    height: 210px;
+}
+#box2 {
+    width: 753px;
+}
+
+.deal-item {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.deal-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.deal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+
+
+.large-deal {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.discount-font {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.shop-now-font {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.discount-font-large {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.shop-now-font-large {
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+/* ...................joining section............. */
+.join-section{
+    
+}
