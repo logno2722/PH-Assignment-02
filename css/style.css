@@ -33,11 +33,16 @@ header {
 }
 
 /* ..............nav......... */
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
+}
+
+.nav {
+    margin-bottom: 120px;
 }
 
 nav ul {
@@ -71,36 +76,29 @@ nav li a {
 
 /* .............banner......... */
 
-
 .banner-items {
     display: flex;
     justify-content: space-between;
     align-items: end;
     margin-top: 120px;
-    align-items: end;
-    justify-content: space-between;
 }
 
 .banner-title {
+    color: black;
     font-size: 4.0625rem;
     font-weight: bold;
     margin-bottom: 13px;
 }
 
 .banner-description {
-    height: 108px;
     color: rgba(0, 0, 0, 0.5);
     font-size: 1.375rem;
-    font-weight: 400;
-
-
+    color: var(--text-light-dark);
     margin-top: 13px;
     max-width: 530px;
 }
 
-.banner-img {
-    height: 355px;
-}
+
 
 /* .............. our plant............ */
 
@@ -108,19 +106,24 @@ nav li a {
     text-align: center;
 }
 
+.our-plant {
+    margin-bottom: 210px;
+}
+
 .our-plant-title {
+    margin-top: 120px;
     font-size: 3.125rem;
     font-weight: bold;
-    margin-top: 120px;
     margin-bottom: 16px;
 }
 
 .our-plant-description {
     color: rgba(0, 0, 0, 0.5);
     font-size: 1.375rem;
-    height: 54px;
-    display: inline-block;
-    margin-bottom: 49px;
+    margin: auto;
+    margin-top: 16px;
+    max-width: 888px;
+    margin-bottom: 50px;
 }
 
 /* ..............card.............. */
@@ -139,43 +142,48 @@ nav li a {
 .card {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    row-gap: 30px;
-    column-gap: 20px;
-    width: 270px;
+    row-gap: 20px;
+    column-gap: 30px;
+    margin-top: 50px;
+}
+
+.card-i {
+    max-width: 270px;
 }
 
 .card-info {
+    font-size: 1.375rem;
     text-align: center;
+    line-height: 150%;
+
 }
 
 .card-img {
-    height: 322px;
-    margin-bottom: 30px;
+    width: 100%;
 }
 
 .card-title {
     margin-bottom: 20px;
-    font-size: 1.375rem;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .card-subtitle {
     margin-bottom: 30px;
-    font-size: 1.375rem;
     font-weight: bold;
 }
 
 /* ................flower & plant............. */
+
 .flower {
     display: flex;
     justify-content: space-between;
-    margin-top: 210px;
     align-items: center;
+    gap: 60px;
+    margin-bottom: 134px;
 }
 
 .flower-img {
-    width: 540px;
-    height: 597px;
+    max-width: 540px;
 }
 
 .trusted-badge {
@@ -208,12 +216,6 @@ nav li a {
     font-weight: 400;
 }
 
-.flower-info li {
-    margin-bottom: 20px;
-    width: 540px;
-    text-align: left
-}
-
 /* ...........Latest deal.......... */
 
 .latest-deal-info {
@@ -234,7 +236,6 @@ nav li a {
     margin-bottom: 120px;
 }
 
-
 .deals-grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -253,6 +254,7 @@ nav li a {
     width: 366px;
     height: 210px;
 }
+
 #box2 {
     width: 753px;
 }
@@ -283,7 +285,6 @@ nav li a {
     color: #fff;
 }
 
-
 .large-deal {
     grid-column: span 2;
     grid-row: span 2;
@@ -310,12 +311,15 @@ nav li a {
     font-size: 1.75rem;
     font-weight: 600;
 }
+
 /* ...................joining section............. */
+
 .join {
     background-image: url("../assets/news-letter-bg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -331,9 +335,9 @@ nav li a {
 }
 
 .join form {
+    display: flex;
     width: 830px;
     height: 50px;
-    display: flex;
 }
 
 .join form input {
@@ -347,37 +351,250 @@ nav li a {
     color: rgba(0, 0, 0, 0.5);
 }
 
-
 /* footer */
+
 .footer {
     display: flex;
     margin: auto;
     padding: 50px 160px;
     justify-content: space-between;
 }
-.footer li{
-    list-style: none;   
+
+.footer li {
+    list-style: none;
 }
-.footer li a{
+
+.footer li a {
     text-decoration: none;
     color: rgba(107, 114, 128, 1);
 }
-.subtitle{
-     margin-top: 16px;
+
+.subtitle {
+    margin-top: 16px;
     color: rgba(0, 0, 0, 0.5);
     font-weight: 400;
     font-size: 1.375rem;
 }
 
-.linksA,
-.linksB {
-    display:flex;
+.l1,
+.l2 {
+    display: flex;
     flex-direction: column;
     gap: 32px;
 }
+
 .icons img {
     margin-right: 24px;
 }
+
 .twitter {
     transform: translate(0, -40%);
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 393px) {
+
+    .header,
+    .banner-info,
+    .our-plant-header,
+    .card,
+    .flower,
+    .latest-deal,.latest-deal
+     {
+        margin: 0px 16px;
+    }
+
+    /* ...........nav.............. */
+    .nav {
+        margin-top: 13px;
+        margin-bottom: 28px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .home,
+    .gray-color {
+        display: none;
+    }
+
+    nav img {
+        max-height: 40px;
+    }
+
+    /* .............banner.......... */
+
+    .banner-items {
+        flex-direction: column-reverse;
+        margin-top: 28px;
+    }
+
+    .banner-img {
+        width: 100%;
+    }
+
+    .banner-title {
+        font-size: 1.5rem;
+        margin-top: 28px;
+    }
+
+    .banner-description {
+        margin-top: 13px;
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    .banner-title,
+    .our-plant-title,
+    .flower-title,
+    .latest-deal-title {
+        font-size: 1.5rem;
+
+    }
+
+    .banner-description,
+    .our-plant-description,
+    .flower-description,
+    .latest-deal-subtitle,
+    .card-subtitle {
+        font-size: 0.875rem;
+    }
+
+    /* ..............our plant........... */
+    .our-plant {
+        margin-bottom: 40px;
+    }
+
+    .our-plant-header {
+        margin-top: 65px;
+    }
+
+    .card {
+        margin-left: 14px;
+        margin-top: 28px;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+        column-gap: 0px;
+    }
+
+    .card-img {
+        max-height: 196px;
+        width: 171px;
+        margin-bottom: 30px;
+    }
+
+    .card-i {
+        max-width: 171px;
+    }
+
+    .card-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .btn-primary {
+        padding: 19px 30px;
+        width: 171px;
+        font-size: 16px;
+    }
+
+    .card-subtitle {
+        margin-bottom: 30px;
+    }
+
+    /* .................flower.......... */
+
+    .flower {
+        flex-direction: column;
+        gap: 18px;
+        margin-bottom: 143px;
+    }
+
+    .trusted-badge {
+        display: none;
+    }
+
+    .flower-img {
+        width: 100%;
+    }
+
+    .flower-title {
+        width: 270px;
+    }
+
+    .flower-info {
+        max-height: 240px;
+    }
+
+    .flower-description {
+        margin-top: 16px;
+        margin-left: 22px;
+
+    }
+
+    /* .......latest deal......... */
+
+    .latest-deal-info {
+        margin-top: 137px;
+        width: 336px;
+    }
+
+    #box2 {
+        width: 366px;
+        height: 210px;
+    }
+
+    .discount-font-large {
+        font-size: 1.25rem;
+    }
+
+    .shop-now-font-large {
+        font-size: 1rem;
+    }
+
+    .deals-grid-container {
+       
+        row-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #box3 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #box1,
+    #box2,
+    #box3 {
+        width: 360px;
+    }
+
+    .latest-deal-subtitle {
+        margin-bottom: 50px;
+    }
+
+    .join {
+        padding: 110px 36px 64px 36px;
+    }
+
+    .join h3 {
+        font-size: 1.25rem;
+    }
+
+    .join form {
+        width: 321px;
+        height: 50px
+    }
+
+    .footer-content {
+        font-size: 1rem;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 50px 16px;
+        gap: 20px;
+    }
+
 }
